@@ -1,0 +1,105 @@
+.animation-share-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.animation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.animation-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px #0002;
+  padding: 20px;
+  width: 300px;
+}
+
+.animation-embed {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
+.author {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.share-form {
+  margin-top: 40px;
+  background: #f5f5fa;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.share-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.share-form button {
+  padding: 8px 18px;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.share-form button:hover {
+  background: #225ea8;
+}
+
+/* Animation: Bouncing Ball */
+.bouncing-ball {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.ball {
+  width: 30px;
+  height: 30px;
+  background: #ff7675;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  animation: bounce 1s infinite cubic-bezier(.28,.84,.42,1);
+}
+@keyframes bounce {
+  0% { bottom: 0; }
+  50% { bottom: 40px; }
+  100% { bottom: 0; }
+}
+
+/* Animation: Animated Gradient */
+.animated-gradient {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+  background-size: 400% 400%;
+  animation: gradientAnim 3s ease infinite;
+}
+@keyframes gradientAnim {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
